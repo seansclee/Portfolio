@@ -2,23 +2,25 @@ import React, { Component, Fragment } from 'react'
 import Splash from './logo1.png'
 import Logo from './logo.png'
 import './App.css'
-import Navbar from './Navbar.js'
+import Home from './Home.js'
+import About from './About.js'
 import { Dropdown, Menu, Button, Form, Grid, Header, Image, Message, Segment, Transition, Input, Container } from 'semantic-ui-react'
 
+const pages = { 'home': <Home/>, 'about me': <About/>}
+
 class App extends Component {
-  state = { splash: true, visible: false, activeItem: 'home' }
+  state = { splash: true, visible: false }
 
   componentDidMount() {
-    this.setState({ splash: true, visible: true, activeItem: 'home' })
-    setTimeout(() => this.setState({ splash: true, visible: false, activeItem: 'home' }), 3000)
-    setTimeout(() => this.setState({ splash: false, visible: false, activeItem: 'home' }), 3500)
+    this.setState({ splash: true, visible: true })
+    setTimeout(() => this.setState({ splash: true, visible: false }), 3000)
+    setTimeout(() => this.setState({ splash: false, visible: false, activeItem: 'home', currentView: <Home/> }), 3500)
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name, currentView: pages[name] })
 
   render() {
-    const { splash, visible, activeItem } = this.state
-
+    const { splash, visible, activeItem, currentView } = this.state
     return (
       splash
         ?
@@ -39,33 +41,40 @@ class App extends Component {
           </Grid>
         </div>
         :
-        <Container style={{ marginTop: '1em' }}>
-          <Menu secondary>
-            <Menu.Item>
-              <Image width='70em' height='70em' src={Logo} href='/' />
-            </Menu.Item>
-            <Menu.Item
-              name='home'
-              active={activeItem === 'home'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='projects'
-              active={activeItem === 'projects'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='about me'
-              active={activeItem === 'about me'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='contact'
-              active={activeItem === 'contact'}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-        </Container>
+        <div className='main'>
+          <Container>
+            <Menu size='huge' secondary style={{paddingTop: '1em'}}>
+              <Menu.Item>
+                <Image width='80em' height='80em' src={Logo} href='/' />
+              </Menu.Item>
+              <Menu.Menu position='right'>
+                <Menu.Item
+                  name='home'
+                  active={activeItem === 'home'}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name='projects'
+                  active={activeItem === 'projects'}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name='about me'
+                  active={activeItem === 'about me'}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name='contact'
+                  active={activeItem === 'contact'}
+                  onClick={this.handleItemClick}
+                />
+              </Menu.Menu>
+            </Menu>
+            <Transition animation='fade' duration='500'>
+            { currentView }
+            </Transition>
+          </Container>
+        </div>
     );
   }
 }
