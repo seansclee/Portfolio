@@ -9,26 +9,36 @@ const Projects = () => (
       <Embed id='vr8mT5GgUQM' source='youtube' />
       <Embed id='SlQjxJhYrzk' source='youtube' />
     </Container>   */}
-  <Modal trigger={<Button>Scrolling Content Modal</Button>}>
-    <Modal.Header>Profile Picture</Modal.Header>
-    <Modal.Content image scrolling>
-      <Image size='medium' src='/images/wireframe/image.png' wrapped />
+    <Container style={{ padding: '6em 8em 6em' }}>
+    <Grid relaxed columns={2}>
+      <Grid.Column>
+        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+      </Grid.Column>
+      <Grid.Column>
+        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+      </Grid.Column>
+    </Grid>
+    <Modal trigger={<Button>Scrolling Content Modal</Button>}>
+      <Modal.Header>Profile Picture</Modal.Header>
+      <Modal.Content image scrolling>
+        <Image size='medium' src='/images/wireframe/image.png' wrapped />
 
-      <Modal.Description>
-        <Header>Modal Header</Header>
-        <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
-        <Embed id='vr8mT5GgUQM' source='youtube' />
+        <Modal.Description>
+          <Header>Modal Header</Header>
+          <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
+          <Embed id='vr8mT5GgUQM' source='youtube' />
 
-      </Modal.Description>
-    </Modal.Content>
-    <Modal.Actions>
-      <Button primary>
-        Proceed <Icon name='chevron right' />
-      </Button>
-    </Modal.Actions>
-  </Modal>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button primary>
+          Proceed <Icon name='chevron right' />
+        </Button>
+      </Modal.Actions>
+    </Modal>
+    </Container>
     <Footer />
   </div>
-    )
-    
+)
+
 export default Projects;
