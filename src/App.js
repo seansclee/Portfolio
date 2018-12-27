@@ -42,7 +42,7 @@ class App extends Component {
           <Container>
             <Menu size='large' secondary style={{ paddingTop: '1em' }}>
               <Menu.Item>
-                <Image width='70em' height='70em' src={Logo} href='/' />
+                <Image size='tiny' src={Logo} href='/' />
               </Menu.Item>
               <Menu.Menu position='right'>
                 <Menu.Item

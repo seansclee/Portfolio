@@ -1,41 +1,56 @@
 import React, { Component } from 'react'
-import logo from './logo1.png'
+import courtdude from './courtdude.png'
+import splitsease from './splits-ease.png'
+import ecommerce from './ecommerce.png'
+import portfolio from './logo1.png'
 import Footer from './Footer.js'
 import { Dropdown, Menu, Embed, Modal, Icon, Container, Button, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
 
 const Projects = () => (
   <div className='projects'>
-    {/* <Container>
-      <Embed id='vr8mT5GgUQM' source='youtube' />
-      <Embed id='SlQjxJhYrzk' source='youtube' />
-    </Container>   */}
-    <Container style={{ padding: '6em 8em 6em' }}>
-    <Grid relaxed columns={2}>
-      <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-      </Grid.Column>
-    </Grid>
-    <Modal trigger={<Button>Scrolling Content Modal</Button>}>
-      <Modal.Header>Profile Picture</Modal.Header>
-      <Modal.Content image scrolling>
-        <Image size='medium' src='/images/wireframe/image.png' wrapped />
-
-        <Modal.Description>
-          <Header>Modal Header</Header>
-          <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
-          <Embed id='vr8mT5GgUQM' source='youtube' />
-
-        </Modal.Description>
-      </Modal.Content>
-      <Modal.Actions>
-        <Button primary>
-          Proceed <Icon name='chevron right' />
-        </Button>
-      </Modal.Actions>
-    </Modal>
+    <Container style={{ padding: '3em 6em 3em' }}>
+      <Grid relaxed columns={2}>
+        <Grid.Column>
+          <Image
+            as='a' 
+            href='https://www.youtube.com/watch?v=vr8mT5GgUQM&t=3s'
+            bordered
+            rounded
+            fluid
+            label={{ as: 'a', corner: 'right', icon: 'github', href: 'https://github.com/FullstackBallerz/courtdude' }}
+            src={courtdude}
+          />
+        </Grid.Column>
+        <Grid.Column>
+          <Image
+            as='a' 
+            href='https://youtu.be/SlQjxJhYrzk'
+            bordered
+            rounded
+            fluid
+            label={{ as: 'a', corner: 'right', icon: 'github', href: 'https://github.com/the-hateful-eight/splits-ease' }}
+            src={splitsease}
+          />
+        </Grid.Column>
+        <Grid.Column>
+          <Image
+            bordered
+            rounded
+            fluid
+            label={{ as: 'a', corner: 'right', icon: 'github', href: 'https://github.com/seanslee92/FPD-Materialized' }}
+            src={ecommerce}
+          />
+        </Grid.Column>
+        <Grid.Column>
+          <Image
+            bordered
+            rounded
+            fluid
+            label={{ as: 'a', corner: 'right', icon: 'github', href: 'https://github.com/seanslee92/Portfolio' }}
+            src={portfolio}
+          />
+        </Grid.Column>
+      </Grid>
     </Container>
     <Footer />
   </div>
