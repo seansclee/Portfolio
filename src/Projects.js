@@ -4,7 +4,7 @@ import splitsease from './splits-ease.png'
 import ecommerce from './ecommerce.png'
 import portfolio from './logo1.png'
 import Footer from './Footer.js'
-import { Dropdown, Menu, Embed, Modal, Icon, Container, Button, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
+import { Container, Grid, Image } from 'semantic-ui-react'
 
 const Projects = () => (
   <div className='projects'>

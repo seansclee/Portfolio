@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Graphic from './home-graphic.png'
 import './App.css'
 import Footer from './Footer.js'
-import { Dropdown, Menu, Container, Button, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
+import { Container, Grid, Header, Image } from 'semantic-ui-react'
 
 const Home = () => (
   <div className='home'>

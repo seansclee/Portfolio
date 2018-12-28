@@ -1,6 +1,8 @@
 # Sean's Personal Website
 
-v1
+v1 ~ Dec 2018
+
+Built using Semantic UI React
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import logo from './logo1.png'
-import { Dropdown, Menu, Icon, Container, Divider, List, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
+import { Icon, Container, Divider, List, Segment } from 'semantic-ui-react'
 
 const Footer = () => (
   <Segment vertical style={{ marginBottom: '1em'}}>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import avatar from './avatar.jpeg'
 import Footer from './Footer.js'
-import { Dropdown, Menu, Container, List, Button, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
+import { Container, List, Image } from 'semantic-ui-react'
 
 const About = () => (
   <div className='about'>
-    <Container style={{ padding: '6em 24em 2em' }}>
-      <Image src={avatar} size='medium' circular centered style={{ padding: '0em 0em 2em' }}/>
+    <Container style={{ padding: '4em 28em 2em' }}>
+      <Image src={avatar} size='large' circular centered style={{ padding: '0em 0em 2em' }}/>
       <List>
         <List.Item>
           <List.Icon name='user' />

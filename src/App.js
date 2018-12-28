@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Splash from './logo1.png'
 import Logo from './logo.png'
 import './App.css'
@@ -6,7 +6,7 @@ import Home from './Home.js'
 import About from './About.js'
 import Projects from './Projects.js'
 import Contact from './Contact.js'
-import { Dropdown, Menu, Button, Form, Grid, Header, Image, Message, Segment, Transition, Input, Container } from 'semantic-ui-react'
+import { Menu, Grid, Image, Transition, Container } from 'semantic-ui-react'
 
 const pages = { 'home': <Home/>, 'about me': <About/>, 'projects': <Projects/>, 'contact': <Contact/> }
 

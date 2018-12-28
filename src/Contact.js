@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
 import Footer from './Footer.js'
-import Graphic0 from './contact-graphic0.png'
 import Graphic from './contact-graphic.png'
-import { Dropdown, Menu, Container, Icon, Button, Form, Grid, Header, Image, Message, Segment, Transition } from 'semantic-ui-react'
+import { Container, Icon, Grid, Header, Image } from 'semantic-ui-react'
 
 const Contact = () => (
   <div className='contact'>
-    <Container style={{ padding: '8em 0em 8em' }}>
+    <Container style={{ paddingTop: '10em', paddingBottom: '8em', paddingLeft: '10em'}}>
       <Grid verticalAlign='middle'>
         <Grid.Row columns='equal'>
-          <Grid.Column>
-            <Image centered size='mini' src={Graphic0}/>
-          </Grid.Column>
           <Grid.Column>
             <Header as='h2'>
               <Icon name='mail' />
