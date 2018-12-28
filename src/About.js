@@ -31,7 +31,7 @@ const About = () => (
         <List.Item>
           <List.Icon name='linkify' />
           <List.Content>
-            <a href='http://www.seanlee.com'>seanlee.com</a>
+            <a href='https://seanlee.herokuapp.com/'>seanlee.herokuapp.com</a>
           </List.Content>
         </List.Item>
         <List.Item>
