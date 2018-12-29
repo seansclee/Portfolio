@@ -5,7 +5,7 @@ import { Container, Icon, Grid, Header, Image } from 'semantic-ui-react'
 
 const Contact = () => (
   <div className='contact'>
-    <Container style={{ paddingTop: '10em', paddingBottom: '8em', paddingLeft: '10em'}}>
+    <Container style={{ paddingTop: '10em', paddingBottom: '10em', paddingLeft: '10em'}}>
       <Grid verticalAlign='middle'>
         <Grid.Row columns='equal'>
           <Grid.Column>
