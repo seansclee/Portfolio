@@ -6,7 +6,7 @@ import { Container, Grid, Header, Image } from 'semantic-ui-react'
 
 const Home = () => (
   <div className='home'>
-    <Container style={{ padding: '10em 0em 12em' }}>
+    <Container style={{ padding: '6em 0em 7em' }}>
       <Grid verticalAlign='middle'>
         <Grid.Row columns='equal'>
           <Grid.Column>
@@ -22,7 +22,7 @@ const Home = () => (
               </Header.Content>
             </Header>
           </Grid.Column>
-          <Grid.Column verticalAlign='center'><Image src={Graphic} size='large'/></Grid.Column>
+          <Grid.Column verticalAlign='center' style={{ padding: '0em 11em 0em' }}><Image src={Graphic} size='large'/></Grid.Column>
         </Grid.Row>
       </Grid>
     </Container>

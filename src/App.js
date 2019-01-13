@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     this.setState({ splash: true, visible: true })
     setTimeout(() => this.setState({ splash: true, visible: false }), 2500)
-    setTimeout(() => this.setState({ splash: false, visible: false, activeItem: 'home', currentView: <Home /> }), 3000)
+    setTimeout(() => this.setState({ splash: false, visible: false, activeItem: 'home', currentView: <Home/> }), 3000)
   }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name, currentView: pages[name] })

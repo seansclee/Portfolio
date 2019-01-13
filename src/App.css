@@ -1,9 +1,9 @@
 .main {
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -moz-animation: fadein 2s; /* Firefox */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera */
-  animation: fadein 2s;
+  -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+  -moz-animation: fadein 2.5s; /* Firefox */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+  -o-animation: fadein 2.5s; /* Opera */
+  animation: fadein 2.5s;
 }
 
 @keyframes fadein {
