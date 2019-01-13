@@ -10,7 +10,7 @@ const Home = () => (
       <Grid verticalAlign='middle'>
         <Grid.Row columns='equal'>
           <Grid.Column>
-            <Header as='h1' style={{ marginLeft: '1em' }}>
+            <Header as='h1' style={{ marginLeft: '1.5em' }}>
               <Header.Content>
                 Hello World, I'm Sean
                 <Header.Subheader><p style={{ marginTop: '1.5em', marginBottom: '0.5em' }}>I'm a full-stack developer from New Jersey.</p></Header.Subheader>
@@ -22,7 +22,7 @@ const Home = () => (
               </Header.Content>
             </Header>
           </Grid.Column>
-          <Grid.Column verticalAlign='center' style={{ padding: '0em 11em 0em' }}><Image src={Graphic} size='large'/></Grid.Column>
+          <Grid.Column verticalAlign='center'><Image centered src={Graphic} size='medium'/></Grid.Column>
         </Grid.Row>
       </Grid>
     </Container>
