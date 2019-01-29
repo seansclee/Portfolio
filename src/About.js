@@ -46,6 +46,18 @@ const About = () => (
           <List.Icon name='tv' />
           <List.Content>Mr. Robot</List.Content>
         </List.Item>
+        <List.Item>
+          <List.Icon name='wrench' />
+          <List.Content>
+            Javascript/Node.js, React, Redux, Express, Sequelize, PostgreSQL, HTML, CSS, JQuery, Semantic-UI, Material-UI, React Native, Expo, C++, Ruby, Photoshop, Illustrator
+          </List.Content>
+        </List.Item>
+        <List.Item>
+          <List.Icon name='search' />
+          <List.Content>
+            Unity, Angular
+          </List.Content>
+        </List.Item>
       </List>
     </Container>
     <Footer />
