@@ -49,7 +49,7 @@ const About = () => (
         <List.Item>
           <List.Icon name='wrench' />
           <List.Content>
-            Javascript/Node.js, React, Redux, Express, Sequelize, PostgreSQL, HTML, CSS, JQuery, Semantic-UI, Material-UI, React Native, Expo, C++, Ruby, Photoshop, Illustrator
+            Javascript/Node.js, React, Redux, Express, Sequelize, PostgreSQL, HTML, CSS, JQuery, Bootstrap, Semantic-UI, Material-UI, React Native, Expo, C++, Ruby, Photoshop, Illustrator
           </List.Content>
         </List.Item>
         <List.Item>
