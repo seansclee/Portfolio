@@ -3,7 +3,7 @@ import courtdude from './courtdude.png'
 import splitsease from './splits-ease.png'
 import ecommerce from './ecommerce.png'
 import portfolio from './logo1.png'
-import weather from './weather.png'
+import weatherv1 from './weather-v1.png'
 import weatherv2 from './weather-v2.png'
 import Footer from './Footer.js'
 import { Container, Grid, Image } from 'semantic-ui-react'
@@ -31,7 +31,7 @@ const Projects = () => (
             rounded
             fluid
             label={{ as: 'a', corner: 'right', icon: 'github', href: 'https://github.com/seanslee92/funweather' }}
-            src={weather}
+            src={weatherv1}
           />
         </Grid.Column>
         <Grid.Column>

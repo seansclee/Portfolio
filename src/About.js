@@ -40,7 +40,7 @@ const About = () => (
         </List.Item>
         <List.Item>
           <List.Icon name='game' />
-          <List.Content>CS:GO</List.Content>
+          <List.Content>Apex Legends, CS:GO</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='tv' />
