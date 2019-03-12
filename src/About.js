@@ -17,6 +17,12 @@ const About = () => (
           <List.Content>Greater New York City Area</List.Content>
         </List.Item>
         <List.Item>
+          <List.Icon name='briefcase' />
+          <List.Content>
+            <a href='https://www.kittyhawkdigital.com/'>KittyHawk Digital</a>
+          </List.Content>
+        </List.Item>
+        <List.Item>
           <List.Icon name='graduation' />
           <List.Content>
             <a href='https://umich.edu/'>University of Michigan</a> & <a href='https://www.fullstackacademy.com/'>Fullstack Academy</a>
@@ -44,7 +50,7 @@ const About = () => (
         </List.Item>
         <List.Item>
           <List.Icon name='tv' />
-          <List.Content>Mr. Robot</List.Content>
+          <List.Content>Silicon Valley, Mr. Robot</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='wrench' />
